@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wallpapers.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_popular"
+        android:name="com.example.wallpapers.ui.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_random"
+        android:name="com.example.wallpapers.ui.RandomFragment"
+        android:label="Random"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_liked"
+        android:name="com.example.wallpapers.ui.LikedFragment"
+        android:label="Liked"
+        tools:layout="@layout/fragment_liked" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.wallpapers.ui.History"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.wallpapers.ui.Info"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+</navigation>
